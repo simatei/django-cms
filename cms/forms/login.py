@@ -8,6 +8,6 @@ class CMSToolbarLoginForm(AuthenticationForm):
         super(CMSToolbarLoginForm, self).__init__(*args, **kwargs)
         kwargs['prefix'] = kwargs.get('prefix', 'cms')
         self.fields['username'].widget = forms.TextInput(
-            attrs = { 'required': 'required' })
+            attrs={'required': 'required'})
         self.fields['password'].widget = forms.PasswordInput(
-            attrs = { 'required': 'required' })
+            attrs={'required': 'required'})
